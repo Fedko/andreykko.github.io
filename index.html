@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<style>
+		/* cyrillic-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: italic;
+		  font-weight: 400;
+		  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/GpWpM_6S4VQLPNAQ3iWvVRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+		  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+		}
+		/* cyrillic */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: italic;
+		  font-weight: 400;
+		  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/7dSh6BcuqDLzS2qAASIeuhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+		  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: italic;
+		  font-weight: 400;
+		  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/DVKQJxMmC9WF_oplMzlQqRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: italic;
+		  font-weight: 400;
+		  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/PIPMHY90P7jtyjpXuZ2cLFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+		}
+		/* cyrillic-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/JX7MlXqjSJNjQvI4heMMGvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+		  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+		}
+		/* cyrillic */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+		  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/9kaD4V2pNPMMeUVBHayd7vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+		}
+		/* cyrillic-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/kTYfCWJhlldPf5LnG4ZnHCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+		  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+		}
+		/* cyrillic */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+		  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/hpORcvLZtemlH8gI-1S-7iEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'PT Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+		}
+		/*! normalize.css v2.1.1 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{background:#eeeeee;color:#000;font-family:'PT Sans', sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{box-sizing:content-box;height:0;margin:0;padding:0;display:none}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}p{margin:1em 0}p:first-child{margin-top:0}p:last-child{margin-bottom:0}html{height:100%;background:#fff}body{min-height:100%;margin:40px;height:auto;background:#ffffff;text-align:center;color:#464646;font-size:14px}@media print{body{margin:0}}*{box-sizing:border-box}.content{text-align:left;margin:auto;overflow:hidden;max-width:680px}@media print{.content{max-width:initial}}.right_box{float:right;clear:right}.right_box .salary{font-size:16px;font-weight:bold}.right_box .work_state{color:#999999}.summary{border:0;overflow:hidden}.summary td{border:0;padding:0}.summary .avatar{float:right;margin-bottom:20px}.summary .avatar img{display:block;max-width:300px}.summary .full_name{font-size:25px;font-weight:bold}.summary .resume_headline{margin-top:2px;line-height:19px;color:#999999;max-width:400px}.summary h3{margin:10px 0 0;padding:0;font-size:14px;font-weight:bold;color:#464646}.summary .contact,.summary p{margin:3px 0 0;color:#999999}.summary .contact b,.summary p b{color:#464646;font-weight:normal}.subtitle{margin:0;padding:5px 0;font-size:19px;font-weight:bold;border-top:2px solid #464646;border-bottom:1px solid #e5e5e5}.skills{margin:0;padding:0}.experiences{border:0;width:100%}.experiences td{border:0;vertical-align:top;padding:15px 0}.experiences tr:first-child td{padding-top:0}.experiences tr:last-child td{padding-top:0}.experiences .experience .info h3{margin:0;padding:0;font-size:17px;font-weight:bold}.experiences .experience .info h4{margin:10px 0 5px;padding:0;font-size:14px;font-weight:bold}.experiences .experience .info .short_geo,.experiences .experience .info .faculty,.experiences .experience .info .position,.experiences .experience .info p{margin:3px 0 0;color:#464646}.experiences .experience .info .text{line-height:1.2em}.experiences .experience .info .text p{margin:0;color:#464646}.experiences .experience .info .text p b{font-weight:bold}.educations{border:0;width:100%}.educations td{border:0;vertical-align:top;padding:15px 0}.educations tr:first-child td{padding-top:0}.educations tr:last-child td{padding-top:0}.educations .education .info h3{margin:0;padding:0;font-size:17px;font-weight:bold}.educations .education .info h4{margin:10px 0 5px;padding:0;font-size:14px;font-weight:bold}.educations .education .info .short_geo,.educations .education .info .faculty,.educations .education .info .position,.educations .education .info p{margin:3px 0 0;color:#464646}.educations .education .info .text{line-height:1.2em}.educations .education .info .text p{margin:0;color:#464646}.educations .education .info .text p b{font-weight:bold}.about_text{font-size:14px}.about_text p{margin:1em 0 !important;line-height:1.2em;color:#464646}.opinions .opinion+.opinion{margin-top:25px}.opinions .opinion{margin:0;padding:0;font-size:14px}.opinions .opinion .username{margin:0;font-size:17px;font-weight:bold}.opinions .opinion .username a{color:black;text-decoration:none}.opinions .opinion .specialization{margin:0;color:#999;font-size:14px}.opinions .opinion .about_text{margin:0em 0;font-size:14px;line-height:1.2em}.opinions .opinion .created_at{margin:0;font-size:14px;color:#999}.about_vacancy .title{margin:0;font-weight:bold;font-size:16px;color:#464646}.about_vacancy .meta{margin-top:3px;font-size:14px;color:#464646}.about_vacancy .meta .label{color:#999}.response{margin-top:20px}.response .title{margin:0;font-weight:bold;font-size:15px;color:#464646}.response .text{margin-top:3px;font-size:14px;line-height:20px;color:#464646}.footer{clear:both;margin:25px 0 0;padding:10px 0;border-top:1px solid #e5e5e5}.footer span{display:inline-block;vertical-align:middle}.footer .logo{display:inline-block;vertical-align:middle;width:67px;height:14px}.footer .logo path{fill:#464646}
+  	</style>
+  </head>
+  <body>
+    <div class="content">
+    <table border="1" cellpadding="0" cellspacing="0" class="summary" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <h1 class="full_name">Андрій Ковальчук</h1>
+            <div class="resume_headline">Fullstack Python Developer</div>
+            <h3>Місце проживання</h3>
+            <p><b>Україна, Київ</b></p>
+            <h3>Вік та стаж</h3>
+            <p>Стаж: <b>4 роки та 3 місяці</b></p>
+            <p>Вік: <b>22 роки</b></p>
+            <p>ЗП: <b>Від 2000 USD.</b></p>
+            <h3>Контактна інформація:</h3>
+      		<div class="contact">Моб. телефон: <b>+38 096 809 5325</b></div>
+      		<div class="contact">E-mail: <b><a href='andreykko@codeguida.com'>andreykko@codeguida.com<a></b></div>
+            <div class="contact">GitHub: <b><a href='https://github.com/andreykko'>https://github.com/andreykko<a></b></div>
+          </td>
+          <td align="right" valign="top" width="200">
+            <div class="avatar"><img alt="" src="medium_6a10324fdd96a41546e6fbfa3d2dc2b4.jpg"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <h2 class="subtitle">Професійні навички</h2>
+    <br>
+      <ul>
+        <li>Python(Django, django-rest-framework)</li>
+        <li>JavaScript (Riotjs, Vuejs, Nuxt, React)</li>
+        <li>HTML</li>
+        <li>CSS (SASS)</li>
+        <li>SQL(mysql, postgresql)</li>
+        <li>Git</li>
+        <li>NoSQL(MongoDB, RethinkDB)</li>
+        <li>Celery</li>
+        <li>Redis</li>
+        <li>Linux</li>
+      </ul>
+      <p> Англійська: читання документації документаций. Відвідую курси, для підвищення рівня англійської.</p>
+    <!-- <div class="skills">Python • Django • JavaScript • Vue.js • Git • Linux</div> -->
+    <br>
+    <h2 class="subtitle">Досвід роботи</h2>
+    <br>
+    <table border="0" cellpadding="0" cellspacing="0" class="experiences">
+      <tbody>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Июль 2014 — <br>По&nbsp;наст.&nbsp;время</td>
+          <td class="info" valign="top">
+            <h3>codeguida.com</h3>
+            <div class="position">Founder</div>
+            <div class="short_geo">Київ</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Розробка платформи з нуля на Django. Публічний запуск.&nbsp;</p>
+              <p>В травні 2017 переведення платформи на Riot.js (SPA) ти Django-rest-framework. Управління 1-2 програмістами. &nbsp; Участь в організації всіх процесів платформи. &nbsp;</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Листопад 2016 — <br>Жовтень 2017</td>
+          <td class="info" valign="top">
+            <h3>olymp.agency</h3>
+            <div class="position">Fullstack developer</div>
+            <div class="short_geo">Київ</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Парт тайм. Django, Django-REST-framework, jQuery, Vue.js, Nuxt.js.&nbsp;</p>
+              <p>Розробка веб-застосунків для українських та закордонних клієнтів.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Апрель 2016 — <br>Ноябрь 2016</td>
+          <td class="info" valign="top">
+            <h3>Inhacking</h3>
+            <div class="position">Fullstack developer</div>
+            <div class="short_geo">Київ</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Розробка веб-застосунків на Django для закордонних клієнтів. Використання Django, Django-REST-framework. Інтеграція Django API з React.js, верстка прототипів. Celery для періодичних та довготривалих задач. Робота по Scrum.&nbsp;</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Май 2015 — <br>Январь 2016</td>
+          <td class="info" valign="top">
+            <h3>Multitest.ua</h3>
+            <div class="position">Python Developer</div>
+            <div class="short_geo">Київ</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Робота з Django, Front-end: Jquery + правки по angular 1.&nbsp;</p>
+              <p>Робота над кабінетом провайдерів, оптимізация роботи сервісу.&nbsp;Celery для періодичних та довготривалих задач.&nbsp; Також займався створення парсеру сайтів зарубіжних провайдерів на asyncio. &nbsp;</p>
+              <p>Можливо отримати рекомендацію від СЕО, Артем&nbsp;Білодід (<a href="https://www.facebook.com/artbels" rel="nofollow">https://www.facebook.com/artbels</a>)</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Апрель 2014 — <br>Сентябрь 2014</td>
+          <td class="info" valign="top">
+            <h3>vse.to</h3>
+            <div class="position">Python developer</div>
+            <div class="short_geo">Москва (Remote)</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Участь в розробці нової версії сервіса: переведення проекту з PHP на Python/Django.&nbsp;</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Февраль 2014 — <br>Март 2014</td>
+          <td class="info" valign="top">
+            <h3>anycafe.me</h3>
+            <div class="position">Python Developer</div>
+            <div class="short_geo">Одеса (Remote)</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Парт тайм, проектна робота. Робота з Django та front-end: jQuery</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="experience">
+          <td class="period" valign="top" width="180">Август 2013 — <br>Апрель 2014</td>
+          <td class="info" valign="top">
+            <h3>For-lunch.net</h3>
+            <div class="position">Junior Python Developer</div>
+            <div class="short_geo">Москва (Remote)</div>
+            <h4>Обо`язки та досягнення</h4>
+            <div class="text">
+              <p>Перший досвід з Django. Правки верстки, використання jQuery.</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
